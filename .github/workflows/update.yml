@@ -1,8 +1,7 @@
-# This workflow diffs the output of urlwatch before and after a pull request
+# This workflow archives published data if there are changes every 15m
 
 name: Update
 
-# Triggers the workflow pull request events
 on: 
   schedule:
     - cron:  '*/15 * * * *'
