@@ -4,7 +4,7 @@ name: Update
 
 on: 
   schedule:
-    - cron:  '0 */6 * * *'
+    - cron:  '*/5 * * * *'
 
 jobs:
   update:
@@ -29,3 +29,4 @@ jobs:
       with:
         commit_message: Updating public spreadsheet CSV backups
         file_pattern: data/*.csv
+        commit_author: GitHub Actions Bot
